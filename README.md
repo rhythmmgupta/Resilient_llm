@@ -6,11 +6,9 @@ Full-stack resilient AI chat application built with **React (Vite + TypeScript)*
 
 ## 1. Live URLs
 
-> Replace these placeholders with your public deployment URLs once deployed (see deployment steps below):
-
-- **Frontend (Public UI):** `https://<your-frontend-deployment-url>`
-- **Backend (FastAPI Base URL):** `https://<your-backend-deployment-url>`
-- **Health Check:** `https://<your-backend-deployment-url>/health`
+- **Frontend (Public UI):** https://resilientllmfrontend.vercel.app
+- **Backend (FastAPI Base URL):** https://resilient-llm.onrender.com
+- **Health Check:** https://resilient-llm.onrender.com/health
 
 ---
 
