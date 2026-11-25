@@ -1,0 +1,21 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.pytest_cache/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Secrets & local state
+.env
+backend/.env
+frontend/.env
+*.db
+*.db-wal
+*.db-shm
+data/
+.DS_Store
