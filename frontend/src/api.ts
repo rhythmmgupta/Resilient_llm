@@ -1,6 +1,13 @@
 import type { ChatResponse, HealthResponse, SessionHistoryResponse } from "./types";
 
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "http://localhost:8000").replace(/\/+$/, "");
+const DEFAULT_API_BASE_URL =
+  typeof window !== "undefined" &&
+  (window.location.hostname === "resilientllmfrontend.vercel.app" ||
+    window.location.hostname.endsWith("-rhythm-0db7.vercel.app"))
+    ? "https://resilient-llm.onrender.com"
+    : "http://localhost:8000";
+
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || DEFAULT_API_BASE_URL).replace(/\/+$/, "");
 
 export class ApiError extends Error {
   status: number;
